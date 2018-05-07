@@ -2,9 +2,9 @@ var map;
 function initMap(){
  map = new google.maps.Map(document.getElementById('map'),{
     center:{
-      lat: 33.101,
-      long: -96.677
+      lat: 33.101874,
+      long: -96.676986
     },
-    zoom: 8
+    zoom: 13
  });                                               
 }
