@@ -9,7 +9,14 @@ function initMap(){
  lat: 33.100279,
  long: -96.676089
 };
- 
+ var thaiPan = {
+  info:'<strong>Thai Pan Restaurant</strong><br>\
+       1223 W McDermott Drive #75, Allen, TX 75013<br>\
+       Category: Thai<br>\
+       Comments: Delicious Pad Thai!',
+  lat: 33.099604,
+  long: -96.697408
+ };
  var map = new google.maps.Map(document.getElementById('map'),{
  zoom: 13,   
  center: new google.maps.LatLng(lat: 33.101874, long: -96.676986),
