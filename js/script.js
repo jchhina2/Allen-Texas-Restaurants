@@ -18,7 +18,7 @@ function initMap(){
   long: -96.697408
  };
  
- var locations = [[shinrai.info, shinrai.lat. shinrai.long,0]];
+ var locations = [[shinrai.info, shinrai.lat, shinrai.long,0]];
  
  var map = new google.maps.Map(document.getElementById('map'),{
  zoom: 13,   
