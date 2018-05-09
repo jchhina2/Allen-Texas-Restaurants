@@ -24,7 +24,8 @@ function initMap(){
  mapTypeId: google.maps.MapTypeId.ROADMAP   
  });
  
- var locations = [[shinrai.info, shinrai.lat, shinrai.long,0]];
+ var locations = [[shinrai.info, shinrai.lat, shinrai.long,0],
+                 [thaiPan.info, thaiPan.lat, thaiPan.long, 1]];
   
  
  var infowindow = new google.maps.InfoWindow({});
@@ -32,14 +33,14 @@ function initMap(){
  
  for(i = 0; i < locations.length; i++)
  {
-   marker = new google.maps.marker({
+   marker = new google.maps.Marker({
     position: new google.maps.LatLng(locations[i][1],locations[i][2]),
     map: map
    });
   
   google.maps.event.addListener(marker, 'click', (function (marker,i){
    return function(){
-    infowindow.seContent(locations[i][0]);
+    infowindow.setContent(locations[i][0]);
     infowindow.open(map, marker);
    }
   })(marker,i));
