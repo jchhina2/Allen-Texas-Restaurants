@@ -17,15 +17,15 @@ function initMap(){
   lat: 33.099604,
   long: -96.697408
  };
- 
- var locations = [[shinrai.info, shinrai.lat, shinrai.long,0]];
- 
+  
  var map = new google.maps.Map(document.getElementById('map'),{
  zoom: 13,   
  center: new google.maps.LatLng(33.101874, -96.676986),
  mapTypeId: google.maps.MapTypeId.ROADMAP   
  });
  
+ var locations = [[shinrai.info, shinrai.lat, shinrai.long,0]];
+  
  
  var infowindow = new google.maps.InfoWindow({});
  var marker, i;
