@@ -32,8 +32,8 @@ function initMap(){
  });
  
  var locations = [[shinrai.info, shinrai.lat, shinrai.long, 0],
-                 [thaiPan.info, thaiPan.lat, thaiPan.long, 1]
-                 [helloBoba.info, helloBoba.lat, helloBoba.long, 2]];
+                 [thaiPan.info, thaiPan.lat, thaiPan.long, 1],
+                 [helloBoba.info, helloBoba.lat, helloBoba.long, 2],];
   
  
  var infowindow = new google.maps.InfoWindow({});
