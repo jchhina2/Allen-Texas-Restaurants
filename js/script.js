@@ -17,15 +17,23 @@ function initMap(){
   lat: 33.099604,
   long: -96.697408
  };
-  
+ var helloBoba = {
+  info:'<strong>Hello Boba</strong><br>\
+       210 Central Expy S #74, Allen, TX 75013<br>\
+       Category: Bubble Tea<br>\
+       Comments: Good selection of drinks!',
+  lat: 33.099605,
+  long: -96.680162
+ };
  var map = new google.maps.Map(document.getElementById('map'),{
  zoom: 13,   
  center: new google.maps.LatLng(33.101874, -96.676986),
  mapTypeId: google.maps.MapTypeId.ROADMAP   
  });
  
- var locations = [[shinrai.info, shinrai.lat, shinrai.long,0],
-                 [thaiPan.info, thaiPan.lat, thaiPan.long, 1]];
+ var locations = [[shinrai.info, shinrai.lat, shinrai.long, 0],
+                 [thaiPan.info, thaiPan.lat, thaiPan.long, 1]
+                 [helloBoba.info, helloBoba.lat, helloBoba.long, 2]];
   
  
  var infowindow = new google.maps.InfoWindow({});
